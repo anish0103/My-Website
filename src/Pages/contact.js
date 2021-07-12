@@ -73,7 +73,7 @@ const ContactPage = () => {
                 <div data-aos={"fade-right"} className='content-class'>
                     <h1>GET IN TOUCH</h1>
                     <h2>_______________</h2>
-                    <p>If you have a general enquiry. Use the contact form to message me. If you would like to discuss a particular project- i'd love to find out more</p>
+                    <p>If you have a general enquiry. Use the contact form to message me. If you would like to discuss a particular project- i'd love to find out more.</p>
                     <h4>Phone No: <a>7433027995</a></h4>
                     <h4>Email Id: <a href="mailto:anish.patel.1829405.ap@gmail.com" target='_blank' title='Send a Email'>anish.patel.1829405.ap@gmail.com</a></h4>
                 </div>
