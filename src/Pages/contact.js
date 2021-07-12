@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 const ContactPage = () => {
 
-    const namevalid = "^[a-zA-Z.\\s]*$";
+    const namevalid = "^[a-zA-Z.,?\\s]*$";
     const emailvalid = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$";
 
     const [Name, SetName] = useState('');
