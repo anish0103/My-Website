@@ -3,6 +3,8 @@ import Notes from './images/notes.jpg';
 import Timer from './images/timer.jpg';
 import Todowebsite from './images/todowebsite.jpg';
 import Calculator from './images/calculator.jpg';
+import ToDoApp from './images/ToDoApp.jpeg';
+import RegistrationApp from './images/RegistrationApp.jpeg';
 
 export const Data = [
     {
@@ -39,12 +41,12 @@ export const Data = [
         id: Math.random(),
         title: 'ToDo App',
         langauges: ['REACT NATIVE'],
-        imageurl: Basic,
+        imageurl: ToDoApp,
     },
     {
         id: Math.random(),
         title: 'Registration App',
         langauges: ['REACT NATIVE'],
-        imageurl: Basic,
+        imageurl: RegistrationApp,
     },
 ]
