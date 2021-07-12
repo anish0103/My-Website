@@ -1,0 +1,36 @@
+.main-card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 21px;
+}
+
+.card-image {
+    width: 120px;
+    height: 120px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px 1px black;
+}
+
+.card-image img {
+    width: 95%;
+    height: 95%;
+}
+
+.card-image img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.card-content {
+    padding: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width:450px) {
+    .card-image {
+        width: 90px;
+        height: 90px;
+        padding: 20px;
+    }
+}

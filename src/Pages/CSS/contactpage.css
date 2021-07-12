@@ -1,0 +1,159 @@
+.contact-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.contact-content {
+    flex: 1;
+    height: 91vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-formcontainer {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 91vh;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.formcontainer form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: #ca003b;
+    border-radius: 13px;
+}
+
+.formcontainer form input {
+    padding: 10px;
+    width: 70%;
+    color: black;
+    outline: none;
+    margin: 10px;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    border-radius: 8px;
+}
+
+.formcontainer label {
+    width: 73%;
+    text-align: left;
+}
+
+.formcontainer button {
+    color: #ca003b;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.formcontainer button:hover {
+    color: #5a001b;
+}
+
+.textareafield  {
+    margin: 10px;
+    color: black;
+    outline: none;
+    padding: 11px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+    width: 70% !important;
+    height: 100px !important;
+}
+
+.content-class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.content-class p {
+    width: 60%;
+    margin: 20px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.content-class h1, h2 {
+    width: 60%;
+    text-align: left;
+}
+
+.content-class h4 {
+    width: 60%;
+    font-weight: normal;
+    text-align: left;
+}
+
+.content-class a {
+    color: #ca003b;
+    text-decoration: none;
+}
+
+@media screen and (max-width:450px) {
+    .contact-main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-content {
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .content-class {
+       height: 100%;
+       width: 100%;
+    }
+
+    .contact-formcontainer {
+        height: 100%;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .formcontainer form {
+        width: 300px;
+    }
+
+    .formcontainer form input {
+        width: 80%;
+    }
+
+    .formcontainer label {
+        width: 83%;
+    }
+
+    .textareafield  {
+        width: 80% !important;
+    }
+}
