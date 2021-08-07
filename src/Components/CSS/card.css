@@ -9,7 +9,7 @@
     height: 120px;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0px 0px 9px 1px black;
+    box-shadow: inset 0px 0px 14px 1px rgb(15, 15, 15);
 }
 
 .card-image img {
@@ -17,7 +17,22 @@
     height: 95%;
 }
 
+.card-image h2 {
+    width: 95%;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-size: 22px;
+}
+
 .card-image img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.card-image h2:hover {
     transform: scale(1.1);
     transition-duration: 0.5s;
 }
@@ -32,5 +47,9 @@
         width: 90px;
         height: 90px;
         padding: 20px;
+    }
+
+    .card-image h2 {
+        font-size: 17px;
     }
 }

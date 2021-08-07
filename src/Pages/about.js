@@ -2,16 +2,9 @@ import { React, useEffect } from "react";
 import AOS from 'aos';
 
 import './CSS/aboutpage.css';
+import { LanguagesKnown } from "../Data/data";
 import Image from './images/aboutimage.jpeg';
 import Card from "../Components/card";
-import Html from './images/html.png';
-import Css from './images/css.png';
-import Js from './images/js.png';
-import Reactimg from './images/react.png';
-import ReactNative from './images/react.png';
-import Node from './images/node.png';
-import Express from './images/express.png';
-import Mongo from './images/mongo.png';
 import "aos/dist/aos.css";
 
 const AboutPage = () => {
@@ -56,17 +49,8 @@ const AboutPage = () => {
           </div>
         </div>
         <div data-aos={"fade-down"} className='langauges-card'>
-          <Card src={Html} alt='Html logo' >HTML</Card>
-          <Card src={Css} alt='Html logo' >CSS</Card>
-          <Card src={Js} alt='Html logo' >JS</Card>
-          <Card src={Reactimg} alt='Html logo' >REACT JS</Card>
-          <Card src={ReactNative} alt='Html logo' >REACTNATIVE</Card>
-          <Card src={Node} alt='Html logo' >NODE JS</Card>
-          <Card src={Express} alt='Html logo' >EXPRESS JS</Card>
-          <Card src={Mongo} alt='Html logo' >MONGO DB</Card>
-
+          {LanguagesKnown.map((data, index) => <div key={index}><Card id={index} name={data} /></div>)}
         </div>
-
       </section>
     </section>
   );

@@ -6,7 +6,8 @@ const Card = (Probs) => {
     return (
         <div className='main-card-container'>
             <div className='card-image'>
-                <img src={Probs.src} alt={Probs.alt} />
+                {Probs.src && <img src={Probs.src} alt={Probs.alt} />}
+                <h2>{Probs.name}</h2>
             </div>
             <div className='card-content'>
                 {Probs.children}

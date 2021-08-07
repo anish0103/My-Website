@@ -50,3 +50,5 @@ export const Data = [
         imageurl: RegistrationApp,
     },
 ]
+
+export const LanguagesKnown = ["HTML", "CSS", "JS", "REACT JS", "REACT NATIVE", "NODE JS", "EXPRESS JS", "MONGO DB"]

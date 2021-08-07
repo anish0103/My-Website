@@ -37,9 +37,9 @@ if(show===true) {
       <ul>
         <img onClick={showhandler} src={CloseButton} alt='close'/>
         <li><a><NavLink onClick={closeslider} activeClassName='active' to="/" exact>Home</NavLink></a></li>
-        <li><a><NavLink onClick={closeslider} activeClassName='active' to="/About" exact>About</NavLink></a></li>
-        <li><a><NavLink onClick={closeslider} activeClassName='active' to="/Work" exact>Work</NavLink></a></li>
-        <li><a><NavLink onClick={closeslider} activeClassName='active' to="/Contact" exact>Contact Me</NavLink></a></li>
+        <li><a><NavLink onClick={closeslider} activeClassName='active' to="/About/" exact>About</NavLink></a></li>
+        <li><a><NavLink onClick={closeslider} activeClassName='active' to="/Work/" exact>Work</NavLink></a></li>
+        <li><a><NavLink onClick={closeslider} activeClassName='active' to="/Contact/" exact>Contact Me</NavLink></a></li>
       </ul>
     </div>
   );
@@ -57,7 +57,5 @@ if(show===true) {
     </div>
   );
 }
-
-{/* <a title="menu icon png 3 lines PNG image with transparent background@toppng.com" href="https://toppng.com/free-image/menu-icon-png-3-lines-PNG-free-PNG-Images_116993" target="_blank">menu icon png 3 lines PNG image with transparent background@toppng.com</a> */}
 
 export default Navigation;
