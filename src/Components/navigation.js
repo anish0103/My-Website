@@ -50,9 +50,9 @@ if(show===true) {
       <ul data-aos={"fade-left"}>
         <img onClick={showhandler} src={NavigationButton}/>
         <li><a><NavLink activeClassName='active' to="/" exact>Home</NavLink></a></li>
-        <li><a><NavLink activeClassName='active' to="/About" exact>About</NavLink></a></li>
-        <li><a><NavLink activeClassName='active' to="/Work" exact>Work</NavLink></a></li>
-        <li><a><NavLink activeClassName='active' to="/Contact" exact>Contact Me</NavLink></a></li>
+        <li><a><NavLink activeClassName='active' to="/About/" exact>About</NavLink></a></li>
+        <li><a><NavLink activeClassName='active' to="/Work/" exact>Work</NavLink></a></li>
+        <li><a><NavLink activeClassName='active' to="/Contact/" exact>Contact Me</NavLink></a></li>
       </ul>
     </div>
   );
