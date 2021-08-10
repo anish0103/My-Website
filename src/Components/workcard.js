@@ -6,6 +6,9 @@ const WorkCard = (Probs) => {
     const workdata = Probs.data;
     return (
         <div className='main-workcard-container'>
+            <div className="workcard-title">
+                <div><h3>{workdata.title}</h3></div>
+            </div>
             <div className='workcard-image'>
                 <img src={Probs.src} alt={Probs.alt} />
             </div>
