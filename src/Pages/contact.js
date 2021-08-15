@@ -2,6 +2,9 @@ import { React, useEffect, useState } from "react";
 import AOS from 'aos';
 
 import './CSS/contactpage.css';
+import GitHub from './images/github.png'
+import Instagram from './images/instagram.png'
+import LinkedIn from './images/linkedin.png'
 import "aos/dist/aos.css";
 
 const ContactPage = () => {
@@ -75,7 +78,18 @@ const ContactPage = () => {
                     <h2>_______________</h2>
                     <p>If you have a general enquiry. Use the contact form to message me. If you would like to discuss a particular project- i'd love to find out more.</p>
                     <h4>Phone No: <a>7433027995</a></h4>
-                    <h4>Email Id: <a href="mailto:anish.patel.1829405.ap@gmail.com" target='_blank' title='Send a Email'>anish.patel.1829405.ap@gmail.com</a></h4>
+                    <h4>Email Id: <a href="mailto:anishpatel1031@gmail.com" target='_blank' title='Send a Email'>anishpatel1031@gmail.com</a></h4>
+                    <div className="contact-link-maincontainer">
+                        <div className="contact-link">
+                            <a href="https://www.instagram.com/anish_0103/" target="_blank"><img src={Instagram} alt="Instagram logo" /></a>
+                        </div>
+                        <div className="contact-link">
+                            <a href="https://github.com/anish0103" target="_blank"><img src={GitHub} alt="Instagram logo" /></a>
+                        </div>
+                        <div className="contact-link">
+                            <a href="https://www.linkedin.com/in/anish-patel-4090081ab/" target="_blank"><img src={LinkedIn} alt="Instagram logo" /></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className='contact-formcontainer'>
