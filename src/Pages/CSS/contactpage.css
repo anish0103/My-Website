@@ -162,14 +162,6 @@
        width: 100%;
     }
 
-    .content-class p, h1, h2, h4 {
-        width: 70% !important;
-    }
-    
-    .contact-link-maincontainer {
-        width: 70% !important;
-    }
-
     .contact-formcontainer {
         height: 100%;
         width: 100%;
