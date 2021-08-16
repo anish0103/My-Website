@@ -10,7 +10,7 @@ const WorkCard = (Probs) => {
                 <div><h3>{workdata.title}</h3></div>
             </div>
             <div className='workcard-image'>
-                <img src={Probs.src} alt={Probs.alt} />
+                <a href={workdata.link} target='_blank' ><img src={Probs.src} alt={workdata.title} /></a>
             </div>
             <div className='workcard-content'>
                 <ul className='workcard-ul'>
