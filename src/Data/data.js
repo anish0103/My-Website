@@ -1,12 +1,12 @@
-import Basic from './images/basic.jpg';
-import Notes from './images/notes.jpg';
-import Timer from './images/timer.jpg';
-import Todowebsite from './images/todowebsite.jpg';
-import Calculator from './images/calculator.jpg';
+import Basic from './images/basic.png';
+import Notes from './images/notes.png';
+import Timer from './images/timer.png';
+import Todowebsite from './images/todowebsite.png';
+import Calculator from './images/calculator.png';
+import CRUD from './images/crudoperation.png'
+import ChatApplication from './images/chatapplication.png'
 import ToDoApp from './images/ToDoApp.jpeg';
 import RegistrationApp from './images/RegistrationApp.jpeg';
-import CRUD from './images/crudoperation.jpg'
-import ChatApplication from './images/chatapplication.jpg'
 
 export const Data = [
     {

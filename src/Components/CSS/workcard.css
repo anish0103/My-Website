@@ -6,14 +6,21 @@
 
 .workcard-image {
     width: 470px;
-    height: 220px;
+    height: 281px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 25px;
     box-shadow: inset 0px 0px 14px 1px rgb(15, 15, 15);
 }
 
 .workcard-image img {
     width: 100%;
-    height: 100%;
+    height: 90%;
+}
+
+.workcard-image a {
+    width: 80%;
 }
 
 .workcard-image img:hover {
@@ -73,7 +80,7 @@
 @media screen and (max-width:450px) {
     .workcard-image {
         width: 270px;
-        height: 125px;
+        height: 150px;
         padding: 25px;;
     }
 
