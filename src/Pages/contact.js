@@ -21,7 +21,7 @@ const ContactPage = () => {
     const Postinformation = async () => {
         const data = { ClientName: Name, ClientPhoneNo: PhoneNo, ClientEmail: Email, ClientEnquiry: Enquiry }
         // console.log(data)
-        const response = await fetch('https://portfolio-c2bb9-default-rtdb.firebaseio.com/data.json', {
+        const response = await fetch('https://anishpatel-portfolio-backend.herokuapp.com/api/', {
             method: 'POST',
             mode: 'cors',
             body: JSON.stringify(data),
