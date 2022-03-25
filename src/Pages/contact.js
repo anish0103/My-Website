@@ -81,7 +81,7 @@ const ContactPage = () => {
                     <h4>Email Id: <a href="mailto:anishpatel1031@gmail.com" target='_blank' title='Send a Email'>anishpatel1031@gmail.com</a></h4>
                     <div className="contact-link-maincontainer">
                         <div className="contact-link">
-                            <a href="https://www.instagram.com/anish_0103/" target="_blank"><img src={Instagram} alt="Instagram logo" /></a>
+                            <a href="https://www.instagram.com/anishp1031/" target="_blank"><img src={Instagram} alt="Instagram logo" /></a>
                         </div>
                         <div className="contact-link">
                             <a href="https://github.com/anish0103" target="_blank"><img src={GitHub} alt="Instagram logo" /></a>
