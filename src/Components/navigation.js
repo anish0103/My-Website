@@ -1,6 +1,7 @@
 import {React, useEffect, useState} from "react";
 import { NavLink } from "react-router-dom";
 import AOS from 'aos';
+import { Squash as Hamburger } from 'hamburger-react'
 
 import './CSS/navigation.css'
 import "aos/dist/aos.css";
@@ -10,6 +11,7 @@ import CloseButton from '../Pages/images/closebutton.png'
 const Navigation = () => {
 
   const[show, setshow] = useState(false)
+  const [isOpen, setOpen] = useState(false)
 
   useEffect(() => {
     AOS.init({
@@ -29,13 +31,14 @@ const showhandler = () => {
 
 const closeslider = () => {
   setshow(false)
+  setOpen(false)
 }
 
 if(show===true) {
   return (
     <div className='phonenavigation'>
       <ul>
-        <img onClick={showhandler} src={CloseButton} alt='close'/>
+        <Hamburger className='humburger' size={25} toggled={isOpen} onToggle={showhandler} toggle={setOpen} />
         <li><a><NavLink onClick={closeslider} activeClassName='active' to="/" exact>Home</NavLink></a></li>
         <li><a><NavLink onClick={closeslider} activeClassName='active' to="/About/" exact>About</NavLink></a></li>
         <li><a><NavLink onClick={closeslider} activeClassName='active' to="/Work/" exact>Work</NavLink></a></li>
@@ -48,7 +51,7 @@ if(show===true) {
   return (
     <div className='navigation'>
       <ul data-aos={"fade-left"}>
-        <img onClick={showhandler} src={NavigationButton}/>
+        <Hamburger className='humburger' size={25} toggled={isOpen} onToggle={showhandler} toggle={setOpen} />
         <li><a><NavLink activeClassName='active' to="/" exact>Home</NavLink></a></li>
         <li><a><NavLink activeClassName='active' to="/About/" exact>About</NavLink></a></li>
         <li><a><NavLink activeClassName='active' to="/Work/" exact>Work</NavLink></a></li>

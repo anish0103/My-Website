@@ -9,12 +9,14 @@
 .imgcontainer {
     flex: 1;
     height: 91vh;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 .image{
-    width: 530px;
+    width: 510px;
     height: 100%;
     opacity: 0.8;
 }

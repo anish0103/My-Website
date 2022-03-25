@@ -28,8 +28,9 @@
     display: flex;
 }
 
-.navigation img {
+.hamburger-react {
     display: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 @media screen and (max-width:450px) {
@@ -37,23 +38,25 @@
         display: none;
     }
 
-    .navigation img {
-        display: block;
+    .navigation .hamburger-react {
         width: 30px;
-        height: 20px;
-        margin-left: 20px;
+        display: block;
+        height: 20px !important;
+        margin-left: 18px;
         margin-top: 10px;
+        -webkit-tap-highlight-color: transparent;
     }
 
-    .phonenavigation img {
+    .phonenavigation .hamburger-react {
         display: block;
-        position: absolute;
+        position: absolute !important;
         top: 0px;
         left: 0px;
         width: 23px;
-        height: 20px;
-        margin-left: 22px;
+        height: 20px !important;
+        margin-left: 18px;
         margin-top: 30px;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .phonenavigation li {

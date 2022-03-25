@@ -2,7 +2,8 @@ import { React, useEffect } from "react";
 import AOS from 'aos';
 import Typewriter from 'typewriter-effect';
 
-import Image from './images/myimage.jpg'
+// import Image from './images/myimage.jpg'
+import Image3 from './images/myimage3.jpeg';
 import './CSS/homepage.css';
 import "aos/dist/aos.css";
 
@@ -19,7 +20,7 @@ const HomePage = () => {
     return (
         <div className='maincontainer'>
             <div className='imgcontainer' data-aos={"fade-right"} >
-                <img className='image' src={Image} alt='Anish' />
+                <img className='image' src={Image3} alt='Anish' />
             </div>
             <div className='contentcontainer'>
                 <div className='home-content'>
