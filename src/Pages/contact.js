@@ -21,6 +21,11 @@ const ContactPage = () => {
     const Postinformation = async () => {
         const data = { ClientName: Name, ClientPhoneNo: PhoneNo, ClientEmail: Email, ClientEnquiry: Enquiry }
         // console.log(data)
+        SetName('')
+        SetPhoneNo('')
+        SetEmail('')
+        SetEnquiry('')
+        SetValid(true)
         const response = await fetch('https://anishpatel-portfolio-backend.herokuapp.com/api/', {
             method: 'POST',
             mode: 'cors',
