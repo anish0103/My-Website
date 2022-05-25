@@ -35,7 +35,7 @@ const AboutPage = () => {
                 <h1>I enjoy taking complex problems and turning them into simple and beautifull interface websites. I also love the logic and structure of coding and always solve to write elegant and efficient code. </h1>
                 <h1>When Im not coding or pushing pixels, you'll find me in the gym or on the count of shooting some hoops.</h1>
                 <div className='about-button'>
-                  <a href="https://drive.google.com/file/d/1FjktGifTZnbtwTmKZYb5_ke5swIMwhtk/view?usp=sharing" rel="noreferrer" target='_blank'>VIEW CV</a>
+                  <a href="https://drive.google.com/file/d/17KjFWu4dw_8mHl_mUgGL-N2LKPD5vInz/view?usp=drivesdk" rel="noreferrer" target='_blank'>VIEW CV</a>
                 </div>
               </div>
             </div>
