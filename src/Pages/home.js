@@ -1,53 +1,48 @@
-import { React, useEffect } from "react";
-import AOS from 'aos';
+import { React } from "react";
+import { Link } from "react-router-dom";
 import Typewriter from 'typewriter-effect';
+import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 
-// import Image from './images/myimage.jpg'
-import Image3 from './images/myimage3.jpeg';
+import ProfilePhoto from './images/myimage.png'
 import './CSS/homepage.css';
-import "aos/dist/aos.css";
 
 const HomePage = () => {
-
-    useEffect(() => {
-        AOS.init({
-            offset: 210,
-            delay: 300,
-            duration: 1000,
-        });
-    }, []);
-
     return (
-        <div className='maincontainer'>
-            <div className='imgcontainer' data-aos={"fade-right"} >
-                <img className='image' src={Image3} alt='Anish' />
-            </div>
-            <div className='contentcontainer'>
-                <div className='home-content'>
-                    <div data-aos={"fade-up"}>
-                        <h3>Hello, my name is</h3>
+        <>
+            <div className="sliderpage"></div>
+            <div className="homepage-maincontainer">
+                <div className="leftsidecontainer"></div>
+                <div className="homepage-leftcontainer">
+                    <div className="homepage-imagecontainer">
+                        <img src={ProfilePhoto} alt="Anish Patel" />
                     </div>
-                    <div data-aos={"fade-up"}>
-                        <h1>Anish Patel</h1>
-                    </div>
-                    <div data-aos={"fade-up"}>
-                        <h2><div className='content-padding'>And I'm a</div> <div className='color'><Typewriter
+                </div>
+                <div className="homepage-rightcontainer">
+                    <div className="homepage-namecontainer">
+                        <h2 className="orangecolor">I'M ANISH PATEL</h2>
+                        <h2><Typewriter
                             onInit={(typewriter) => {
                                 typewriter.typeString('')
                                     .pauseFor(550)
                                     .deleteAll()
-                                    .typeString(' Web Developer')
+                                    .typeString('WEB DEVELOPER')
                                     .pauseFor(2000)
                                     .deleteAll()
-                                    .typeString(' MERN Stack Developer')
+                                    .typeString('MERN STACK DEVELOPER')
                                     .pauseFor(250)
                                     .start();
                             }}
-                        /></div></h2>
+                        /></h2>
+                    </div>
+                    <div className="homepagecontentcontainer">
+                        <p>I enjoy taking complex problems and turning them into simple and beautifull interface websites. I also love the logic and structure of coding and always solve to write elegant and efficient code.</p>
+                    </div>
+                    <div className="homepage-buttoncontainer">
+                        <Link to="/about">MORE ABOUT ME<div className="homepage-buttonarrow"><KeyboardArrowRightRoundedIcon /></div></Link>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

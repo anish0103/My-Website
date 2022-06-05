@@ -15,13 +15,13 @@ const App = () => {
         <Route path="/" exact>
           <HomePage />
         </Route>
-        <Route path="/About/" exact >
+        <Route path="/about/" exact >
           <AboutPage />
         </Route>
-        <Route path="/Work/" exact >
+        <Route path="/work/" exact >
           <WorkPage />
         </Route>
-        <Route path="/Contact/" exact >
+        <Route path="/contact/" exact >
           <ContactPage />
         </Route>
         <Redirect to="/" />
