@@ -2,22 +2,16 @@ import React from "react";
 
 import './CSS/workcard.css'
 
-const WorkCard = (Probs) => {
-    const workdata = Probs.data;
+const WorkCard = (props) => {
+    const workdata = props.data;
     return (
-        <div className='main-workcard-container'>
-            <div className="workcard-title">
-                <div><h3>{workdata.title}</h3></div>
+        <a href={workdata.link} rel="noreferrer" target="_blank" className="workcard-maincontainer">
+            <img className="workpage-image" src={workdata.imageurl} />
+            <div className="workcard-contentcontainer">
+                <h2>{workdata.title}</h2>
+                {workdata.langauges.map((data)=> <h3>{data}</h3>)}
             </div>
-            <div className='workcard-image'>
-                <a href={workdata.link} target='_blank' ><img src={Probs.src} alt={workdata.title} /></a>
-            </div>
-            <div className='workcard-content'>
-                <ul className='workcard-ul'>
-                {workdata.langauges.map((data)=> <li className='workcard-li'>{data}</li>)}
-                </ul>
-            </div>
-        </div>
+        </a>
     );
 }
 

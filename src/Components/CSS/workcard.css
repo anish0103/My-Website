@@ -1,102 +1,77 @@
-.main-workcard-container {
-    display: flex;
-    flex-direction: column;
-    margin: 21px;
+.workcard-maincontainer {
+  width: 30%;
+  overflow: hidden;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+  border-radius: 10px;
+  animation: fadeRightAnimation 1.7s ease-in-out;
 }
 
-.workcard-image {
-    width: 470px;
-    height: 281px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    box-shadow: inset 0px 0px 14px 1px rgb(15, 15, 15);
+.workpage-image {
+  width: 100%;
+  transition: 0.4s;
 }
 
-.workcard-image img {
+.workcard-contentcontainer {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    left: 0;
     width: 100%;
-    height: 90%;
-}
-
-.workcard-image a {
-    width: 80%;
-}
-
-.workcard-image img:hover {
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-}
-
-.workcard-content {
-    padding: 12px;
-    background-color: #302f2f;
-    text-align: center;
-    border-radius: 0px 0px 10px 10px ;
-    height: 80px;
-}
-
-.workcard-title {
-    padding: 12px;
-    background-color: #302f2f;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px 10px 0px 0px;
-    height: 40px;
-}
-
-.workcard-title h3 {
-    font-weight: normal;
-}
-
-.workcard-li {
-    list-style: none;
-    font-size: 15px;
-}
-
-.workcard-content ul {
-    display: flex;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+    background-color: #ffb400;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: inherit;
 }
 
-::-webkit-scrollbar {
-    width: 6px;
-  }
+.workcard-maincontainer:hover {
+    cursor: pointer;
+}
+
+.workcard-maincontainer:hover .workcard-contentcontainer {
+    top: 0;
+    opacity: 1;
+}
+
+.workcard-maincontainer:hover .workpage-image {
+  transform: scale(1.2);
+}
+
+.workcard-contentcontainer h2 {
+    margin-bottom: 10px;
+}
+
+.workcard-contentcontainer h2, .workcard-contentcontainer h3 {
+    font-weight: 100;
+}
+
+@keyframes fadeRightAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
   
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
 
-::-webkit-scrollbar-thumb {
-    background-color: #353535;
-    border-radius: 20px;
-}
+  @media screen and (max-width: 480px) {
+    .workcard-maincontainer {
+      width: 100% !important;
+    }
+  }
 
-@media screen and (max-width:450px) {
-    .workcard-image {
-        width: 270px;
-        height: 150px;
-        padding: 25px;;
+  @media screen and (max-width: 768px) {
+    .workcard-maincontainer {
+      width: 44%;
     }
-
-    .workcard-content {
-        height: 50px;
-    }
-    
-    .workcard-li {
-        font-size: 11.5px;
-    }
-    
-    .workcard-title {
-        height: 15px;
-    }
-    
-    .workcard-title h3 {
-        font-size: 15px;
-    }
-}
+  }

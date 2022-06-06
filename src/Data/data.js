@@ -1,10 +1,11 @@
-import Basic from './images/basic.png';
-import Notes from './images/notes.png';
-import Timer from './images/timer.png';
-import Todowebsite from './images/todowebsite.png';
-import Calculator from './images/calculator.png';
-import CRUD from './images/crudoperation.png'
-import ChatApplication from './images/chatapplication.png'
+import Basic from './images/Basic.jpg';
+import Notes from './images/notes.jpg';
+import Timer from './images/Timer.jpg';
+import Todowebsite from './images/todowebsite.jpg';
+import Calculator from './images/Calculator.jpg';
+import CRUD from './images/crudoperation.jpg'
+import ChatApplication from './images/chatapplication.jpg'
+import QRCodeGenerator from './images/qrcodegenerator.jpg';
 import ToDoApp from './images/ToDoApp.jpeg';
 import RegistrationApp from './images/RegistrationApp.jpeg';
 
@@ -50,6 +51,13 @@ export const Data = [
         langauges: ['MONGODB', 'EXPRESS JS', 'REACT JS', 'NODE JS'],
         imageurl: ChatApplication,
         link: 'https://anish-mern-chat-application.netlify.app/'
+    },
+    {
+        id: Math.random(),
+        title: 'QR Code Generator',
+        langauges: ['REACT JS'],
+        imageurl: QRCodeGenerator,
+        link: 'https://anish-react-qrcodegenerator.netlify.app/'
     },
     {
         id: Math.random(),

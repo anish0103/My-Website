@@ -1,35 +1,22 @@
-* {
-    color: white;
-}
-
-.work-main-container {
+.workpage-maincontainer {
+    animation: fadeUpAnimation 1.5s ease-in-out;
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.work-text-container h1 {
-    padding: 10px;
-    font-size: 28px;
-    text-align: center;
-}
-
-.work-text-container {
-    padding: 5px;
-}
-
-.work-card-container {
-    /* background-color: grey; */
-    width: 100%;
+.workpage-workcontainer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-} 
+    width: 80%;
+}
 
-.workpage-center {
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 768px) {
+    .workpage-workcontainer {
+        width: 95%;
+        justify-content: center;
+        margin-bottom: 90px;
+    }
+    
 }

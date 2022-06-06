@@ -1,32 +1,23 @@
-import { React, useEffect } from "react";
-import AOS from 'aos';
+import { React } from "react";
 
 import './CSS/workpage.css';
 import WorkCard from "../Components/workcard";
 import { Data } from "../Data/data";
-import "aos/dist/aos.css";
 
 const WorkPage = () => {
-
-  useEffect(() => {
-    AOS.init({
-      offset: 210,
-      delay: 300,
-      duration: 1000,
-    });
-  }, []);
-
   return (
-    <div className='work-main-container'>
-      <div className='work-text-container'>
-        <div data-aos={"fade-right"}>
-          <h1>Work done by me</h1>
+    <>
+      <div className="sliderpage"></div>
+      <div className="workpage-maincontainer">
+        <div className="titlecontainer">
+          <h1>MY <span className="orangecolor">PORTFOLIO</span></h1>
+          <span className="title-background">WORKS</span>
+        </div>
+        <div className="workpage-workcontainer">
+          {Data.map((data) => <WorkCard data={data} />)}
         </div>
       </div>
-      <div data-aos={"fade-up"} className='work-card-container'>
-        {Data.map((data) => <WorkCard data={data} src={data.imageurl} />)}
-      </div>
-    </div>
+    </>
   );
 }
 
