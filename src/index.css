@@ -13,6 +13,52 @@ body {
   background-color: #111;
 }
 
+.titlecontainer {
+  padding: 80px 0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.titlecontainer h1 {
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.title-background {
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 15px;
+  color: hsla(0,0%,100%,.07);
+  top: 22%;
+  left: 0;
+  right: 0;
+  font-size: 110px;
+}
+
+@media screen and (max-width: 480px) {
+  .title-background {
+    display: none;
+  }
+
+  .titlecontainer h1 {
+    font-size: 35px;
+    text-align: left;
+    margin-left: 2%;
+  }
+
+  .titlecontainer {
+    padding: 75px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-background {
+    font-size: 90px;
+    top: 27%;
+  }
+} 
+
 .sliderpage {
   position: absolute;
   width: 100%;

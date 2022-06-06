@@ -1,11 +1,16 @@
 import { React, useEffect, useState } from "react";
-import AOS from 'aos';
+import { Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.min.css';
+import CallRoundedIcon from '@mui/icons-material/CallRounded';
+import DraftsRoundedIcon from '@mui/icons-material/DraftsRounded';
+import SendRoundedIcon from '@mui/icons-material/SendRounded';
 
 import './CSS/contactpage.css';
 import GitHub from './images/github.png'
 import Instagram from './images/instagram.png'
 import LinkedIn from './images/linkedin.png'
-import "aos/dist/aos.css";
 
 const ContactPage = () => {
 
@@ -16,7 +21,6 @@ const ContactPage = () => {
     const [PhoneNo, SetPhoneNo] = useState('');
     const [Email, SetEmail] = useState('');
     const [Enquiry, SetEnquiry] = useState('');
-    const [Valid, SetValid] = useState(true)
 
     const Postinformation = async () => {
         const data = { ClientName: Name, ClientPhoneNo: PhoneNo, ClientEmail: Email, ClientEnquiry: Enquiry }
@@ -25,7 +29,7 @@ const ContactPage = () => {
         SetPhoneNo('')
         SetEmail('')
         SetEnquiry('')
-        SetValid(true)
+        toast.success("Your Inquiry Is Reached To Me, I Will Contact You Soon!!");
         const response = await fetch('https://anishpatel-portfolio-backend.herokuapp.com/api/', {
             method: 'POST',
             mode: 'cors',
@@ -39,19 +43,16 @@ const ContactPage = () => {
             SetPhoneNo('')
             SetEmail('')
             SetEnquiry('')
-            SetValid(true)
         }
     }
 
     const submithandler = (e) => {
         e.preventDefault();
         if (!Name.match(namevalid) || PhoneNo.length > 10 || PhoneNo.length < 10 || !Email.match(emailvalid) || !Enquiry.match(namevalid) || Enquiry.length === 0) {
-            SetValid(false)
+            toast.error("Please Enter All Your Details Properly!");
             return
         }
         Postinformation();
-
-
     }
 
     const Namehandler = (e) => {
@@ -67,55 +68,68 @@ const ContactPage = () => {
         SetEnquiry(e.target.value)
     }
 
-    useEffect(() => {
-        AOS.init({
-            offset: 210,
-            delay: 300,
-            duration: 1000,
-        });
-    }, []);
-
     return (
-        <div className='contact-main-container'>
-            <div className='contact-content' >
-                <div data-aos={"fade-right"} className='content-class'>
-                    <h1>GET IN TOUCH</h1>
-                    <h2>_______________</h2>
-                    <p>If you have a general enquiry. Use the contact form to message me. If you would like to discuss a particular project- i'd love to find out more.</p>
-                    <h4>Phone No: <a>7433027995</a></h4>
-                    <h4>Email Id: <a href="mailto:anishpatel1031@gmail.com" target='_blank' title='Send a Email'>anishpatel1031@gmail.com</a></h4>
-                    <div className="contact-link-maincontainer">
-                        <div className="contact-link">
-                            <a href="https://www.instagram.com/anishp1031/" target="_blank"><img src={Instagram} alt="Instagram logo" /></a>
+        <>
+            <div className="sliderpage"></div>
+            <div className="contactpage-maincontainer">
+                <ToastContainer toastStyle={{ backgroundColor: "#252525", fontSize: "14px", lineHeight: "20px" }} />
+                <div className="titlecontainer">
+                    <h1>GET IN <span className="orangecolor">TOUCH</span></h1>
+                    <span className="title-background">CONTACT</span>
+                </div>
+                <div className="contactpage-container">
+                    <div className="contactpage-leftcontainer">
+                        <h3>DON'T BE SHY !</h3>
+                        <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                        <div className="contact-details">
+                            <div>
+                                <DraftsRoundedIcon />
+                            </div>
+                            <div className="contact-subdetails">
+                                <span>MAIL ME</span>
+                                <a href="mailto:anishpatel1031@gmail.com" target='_blank' title='SEND A MAIL' className="simplefont">anishpatel1031@gmail.com</a>
+                            </div>
                         </div>
-                        <div className="contact-link">
-                            <a href="https://github.com/anish0103" target="_blank"><img src={GitHub} alt="Instagram logo" /></a>
+                        <div className="contact-details">
+                            <div>
+                                <CallRoundedIcon />
+                            </div>
+                            <div className="contact-subdetails">
+                                <span>CALL ME</span>
+                                <a href="Tel: +917433027995" target='_blank' title='MAKE A CALL' className="simplefont">+91 7433027995</a>
+                            </div>
                         </div>
-                        <div className="contact-link">
-                            <a href="https://www.linkedin.com/in/anish-patel-4090081ab/" target="_blank"><img src={LinkedIn} alt="Instagram logo" /></a>
+                        <div className="contactpage-socialmedialink">
+                            <div className="contactpage-link">
+                                <a href="https://www.instagram.com/anishp1031/" target="_blank"><img src={Instagram} alt="Instagram" /></a>
+                            </div>
+                            <div className="contactpage-link">
+                                <a href="https://github.com/anish0103" target="_blank"><img src={GitHub} alt="Instagram" /></a>
+                            </div>
+                            <div className="contactpage-link">
+                                <a href="https://www.linkedin.com/in/anish-patel-4090081ab/" target="_blank"><img src={LinkedIn} alt="Instagram" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="contactpage-rightcontainer">
+                        <div className="contactpage-formcontainer">
+                            <input value={Name} onChange={Namehandler} placeholder="YOUR NAME" />
+                            <input value={Email} onChange={Emailhandler} placeholder="YOUR EMAIL" />
+                        </div>
+                        <div className="contactpage-formcontainer">
+                            <input value={Email} onChange={Phonehandler} placeholder="YOUR PHONE NUMBER" />
+                        </div>
+                        <div className="contactpage-formcontainer">
+                            <textarea value={Enquiry} onChange={Enquiryhandler} placeholder="YOUR MESSAGE" />
+                        </div>
+                        <div className="homepage-buttoncontainer contactpage-button">
+                            <Link onClick={submithandler}>SEND MESSAGE<div className="homepage-buttonarrow"><SendRoundedIcon /></div></Link>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='contact-formcontainer'>
-                <div data-aos={"fade-down"} className='formcontainer'>
-                    <div>
-                        <form>
-                            {!Valid && <p>Please Enter Valid Details!!!</p>}
-                            <label>Name</label>
-                            <input value={Name} onChange={Namehandler} ons type="text" placeholder='Enter Your Name'></input>
-                            <label>Phone No.</label>
-                            <input value={PhoneNo} onChange={Phonehandler} type="number" placeholder='Enter Your Number'></input>
-                            <label>Email Id</label>
-                            <input value={Email} onChange={Emailhandler} type="email" placeholder='Enter Your Email id'></input>
-                            <label>Enquiry</label>
-                            <textarea value={Enquiry} onChange={Enquiryhandler} type="text" className='textareafield' placeholder='Enter Your enquiry'></textarea>
-                            <button onClick={submithandler} type='submit'>GET IN TOUCH</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </>
+
     );
 }
 

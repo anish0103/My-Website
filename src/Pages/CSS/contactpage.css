@@ -1,191 +1,187 @@
-.contact-main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-direction: row;
+.contactpage-maincontainer {
+  display: flex;
+  animation: fadeUpAnimation 1.5s ease-in-out;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
-.contact-content {
-    flex: 1;
-    height: 91vh;
-    justify-content: center;
-    align-items: center;
+.contactpage-container {
+  display: flex;
+  width: 80%;
+  height: 100%;
 }
 
-.contact-formcontainer {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 91vh;
+.contactpage-leftcontainer {
+  width: 35%;
+  height: 100%;
 }
 
-.formcontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: inherit;
+.contactpage-leftcontainer h3 {
+  font-size: 26px;
 }
 
-.formcontainer form {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 500px;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    background-color: #ca003b;
-    border-radius: 13px;
+.contactpage-leftcontainer p {
+  margin: 30px 0;
+  text-align: justify;
 }
 
-.formcontainer form input {
-    padding: 10px;
-    width: 70%;
-    color: black;
-    outline: none;
-    margin: 10px;
-    border: none;
-    background-color: rgb(230, 230, 230);
-    border-radius: 8px;
+.contact-details {
+  display: flex;
+  margin-bottom: 30px;
 }
 
-.formcontainer label {
-    width: 73%;
-    text-align: left;
+.contact-details svg {
+  fill: #ffb400;
+  font-size: 35px;
 }
 
-.formcontainer button {
-    color: #ca003b;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-weight: bold;
+.contact-subdetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 
-.formcontainer button:hover {
-    color: #5a001b;
+.contact-subdetails span {
+  opacity: 0.8;
+  margin-bottom: 5px;
 }
 
-.textareafield  {
-    margin: 10px;
-    color: black;
-    outline: none;
-    padding: 11px;
-    border: none;
-    border-radius: 8px;
-    background-color: rgb(230, 230, 230);
-    width: 70% !important;
-    height: 100px !important;
+.simplefont {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
 }
 
-.content-class {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: inherit;
-}
-
-.content-class p {
-    width: 70%;
-    margin: 20px;
-    margin-top: 25px;
-    font-size: 18px;
-}
-
-.content-class h1, h2 {
-    width: 70%;
-    text-align: left;
-}
-
-.content-class h2 {
-    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-}
-
-.content-class h4 {
-    width: 70%;
-    font-weight: normal;
-    text-align: left;
-}
-
-.contact-link-maincontainer {
-    display: flex;
-    width: 70%;
-    height: 10%;
-    margin-top: 4%;
-    align-items: center;
+.contactpage-socialmedialink {
+  height: 10%;
+  display: flex;
 }
 
 .contact-link {
-    height: 100%;
-    width: 8%;
-    display: flex;
-    margin-right: 6%;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
 }
 
-.contact-link img {
+.contactpage-socialmedialink img {
+  height: 100%;
+  width: 100%;
+}
+
+.contactpage-link {
+  background-color: #2b2a2a;
+  border-radius: 50%;
+  margin-right: 15px;
+  width: 40px;
+  transition: 0.3s;
+  height: 40px;
+}
+
+.contactpage-link:hover {
+  background-color: #ffb400;
+}
+
+.contactpage-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contactpage-socialmedialink img {
+  width: 50%;
+  height: 50%;
+}
+
+.contactpage-rightcontainer {
+  width: 65%;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.contactpage-formcontainer {
+  width: 100%;
+  display: flex;
+}
+
+.contactpage-formcontainer input,
+.contactpage-formcontainer textarea {
+  border: 1px solid #111;
+  width: 100%;
+  background: #252525;
+  color: #fff;
+  padding: 15px 26px;
+  margin: 0 20px 30px 0;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contactpage-formcontainer input:focus,
+.contactpage-formcontainer textarea:focus {
+  border: 1px solid #ffb400;
+}
+
+.contactpage-formcontainer textarea {
+  height: 200px;
+  margin: 0 20px 20px 0;
+  resize: none;
+}
+
+.contactpage-button svg {
+  font-size: 25px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .contactpage-leftcontainer h3 {
+    font-size: 21px;
+  }
+
+  .contactpage-formcontainer input,
+  .contactpage-formcontainer textarea {
+    width: 85% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactpage-container {
+    flex-direction: column;
+    width: 95%;
+    margin-bottom: 50px;
+  }
+
+  .contactpage-maincontainer {
+    height: fit-content;
+  }
+
+  .contactpage-leftcontainer {
+    width: 98%;
+  }
+
+  .contactpage-rightcontainer {
     width: 100%;
-    height: 100%;
-}
+    margin-top: 30px;
+    padding: 0;
+    margin-bottom: 75px;
+  }
 
-.content-class a {
-    color: #ca003b;
-    text-decoration: none;
-}
+  .contactpage-formcontainer {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
-@media screen and (max-width:450px) {
-    .contact-main-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+  .contactpage-formcontainer input,
+  .contactpage-formcontainer textarea {
+    margin: 0 0 30px 0;
+    width: 90%;
+  }
 
-    .contact-link {
-        width: 10%;
-    }
-
-    .contact-content {
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .content-class {
-       height: 100%;
-       width: 100%;
-    }
-
-    .contact-formcontainer {
-        height: 100%;
-        width: 100%;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-
-    .formcontainer form {
-        width: 300px;
-    }
-
-    .formcontainer form input {
-        width: 80%;
-    }
-
-    .formcontainer label {
-        width: 83%;
-    }
-
-    .textareafield  {
-        width: 80% !important;
-    }
+  .contactpage-button {
+    width: 100%;
+    text-align: center;
+  }
 }
