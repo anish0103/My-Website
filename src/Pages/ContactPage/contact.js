@@ -117,11 +117,11 @@ const ContactPage = () => {
                     </div>
                     <div className="contactpage-rightcontainer">
                         <div className="contactpage-formcontainer">
-                            <input value={Name} onChange={Namehandler} placeholder="YOUR NAME" />
-                            <input value={Email} onChange={Emailhandler} placeholder="YOUR EMAIL" />
+                            <input type="text" value={Name} onChange={Namehandler} placeholder="YOUR NAME" />
+                            <input type="email" value={Email} onChange={Emailhandler} placeholder="YOUR EMAIL" />
                         </div>
                         <div className="contactpage-formcontainer">
-                            <input value={Email} onChange={Phonehandler} placeholder="YOUR PHONE NUMBER" />
+                            <input type="number" value={PhoneNo} onChange={Phonehandler} placeholder="YOUR PHONE NUMBER" />
                         </div>
                         <div className="contactpage-formcontainer">
                             <textarea value={Enquiry} onChange={Enquiryhandler} placeholder="YOUR MESSAGE" />
