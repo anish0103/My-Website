@@ -6,8 +6,8 @@ import Calculator from './images/Calculator.jpg';
 import CRUD from './images/crudoperation.jpg'
 import ChatApplication from './images/chatapplication.jpg'
 import QRCodeGenerator from './images/qrcodegenerator.jpg';
-import ToDoApp from './images/ToDoApp.jpeg';
-import RegistrationApp from './images/RegistrationApp.jpeg';
+import ToDoApp from './images/ToDoApp.jpg';
+import RegistrationApp from './images/RegistrationApp.jpg';
 
 export const Data = [
     {
