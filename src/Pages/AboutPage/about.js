@@ -5,11 +5,11 @@ import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import ProfilePhoto from './images/myimage.png'
-import Resume from './About/Resume.pdf'
-import { LanguagesKnown } from "../Data/data";
-import Card from "../Components/card";
-import './CSS/aboutpage.css';
+import ProfilePhoto from '../images/myimage.png'
+import Resume from './Resume.pdf'
+import { LanguagesKnown } from "../../Data/data";
+import Card from "../../Components/LanguagesCard/card";
+import './aboutpage.css';
 
 const AboutPage = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import './CSS/card.css'
+import './card.css'
 
 const Card = (Probs) => {
     return (

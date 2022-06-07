@@ -1,6 +1,6 @@
 import React from "react";
 
-import './CSS/workcard.css'
+import './workcard.css'
 
 const WorkCard = (props) => {
     const workdata = props.data;

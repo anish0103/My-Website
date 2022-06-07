@@ -5,7 +5,7 @@ import WorkRoundedIcon from '@mui/icons-material/WorkRounded';
 import AccountBoxRoundedIcon from '@mui/icons-material/AccountBoxRounded';
 import DraftsRoundedIcon from '@mui/icons-material/DraftsRounded';
 
-import './CSS/navigation.css'
+import './navigation.css'
 
 const Navigation = () => {
   return (

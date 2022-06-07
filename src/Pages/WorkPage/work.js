@@ -1,8 +1,8 @@
 import { React } from "react";
 
-import './CSS/workpage.css';
-import WorkCard from "../Components/workcard";
-import { Data } from "../Data/data";
+import './workpage.css';
+import WorkCard from "../../Components/WorkCard/workcard";
+import { Data } from "../../Data/data";
 
 const WorkPage = () => {
   return (

@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,10 +7,10 @@ import CallRoundedIcon from '@mui/icons-material/CallRounded';
 import DraftsRoundedIcon from '@mui/icons-material/DraftsRounded';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 
-import './CSS/contactpage.css';
-import GitHub from './images/github.png'
-import Instagram from './images/instagram.png'
-import LinkedIn from './images/linkedin.png'
+import './contactpage.css';
+import GitHub from '../images/github.png'
+import Instagram from '../images/instagram.png'
+import LinkedIn from '../images/linkedin.png'
 
 const ContactPage = () => {
 
