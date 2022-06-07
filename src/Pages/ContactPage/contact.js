@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -13,6 +13,10 @@ import Instagram from '../images/instagram.png'
 import LinkedIn from '../images/linkedin.png'
 
 const ContactPage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     const namevalid = "^[a-zA-Z.,?\\s]*$";
     const emailvalid = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$";

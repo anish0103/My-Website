@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useEffect } from "react";
 import FileDownloadRoundedIcon from '@mui/icons-material/FileDownloadRounded';
 import WorkRoundedIcon from '@mui/icons-material/WorkRounded';
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
@@ -12,6 +12,9 @@ import Card from "../../Components/LanguagesCard/card";
 import './aboutpage.css';
 
 const AboutPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <div className="sliderpage"></div>
