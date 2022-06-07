@@ -35,7 +35,7 @@ const HomePage = () => {
                         /></h2>
                     </div>
                     <div className="homepagecontentcontainer">
-                        <p>I enjoy taking complex problems and turning them into simple and beautifull interface websites. I also love the logic and structure of coding and always solve to write elegant and efficient code.</p>
+                        <p>I enjoy taking complex problems and turning them into simple and beautiful interface websites. I also love the logic and structure of coding and always solve to write elegant and efficient code.</p>
                     </div>
                     <div className="homepage-buttoncontainer">
                         <Link to="/about">MORE ABOUT ME<div className="homepage-buttonarrow"><KeyboardArrowRightRoundedIcon /></div></Link>

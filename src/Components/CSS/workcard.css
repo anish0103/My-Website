@@ -19,7 +19,7 @@
 .workcard-contentcontainer {
     display: flex;
     position: absolute;
-    top: 100%;
+    top: 0;
     opacity: 0;
     left: 0;
     width: 100%;
@@ -36,7 +36,6 @@
 }
 
 .workcard-maincontainer:hover .workcard-contentcontainer {
-    top: 0;
     opacity: 1;
 }
 
