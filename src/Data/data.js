@@ -8,6 +8,7 @@ import ChatApplication from './images/chatapplication.jpg'
 import QRCodeGenerator from './images/qrcodegenerator.jpg';
 import ToDoApp from './images/ToDoApp.jpg';
 import RegistrationApp from './images/RegistrationApp.jpg';
+import ManageUpApp from './images/manageupapp.jpg'
 
 export const Data = [
     {
@@ -65,6 +66,13 @@ export const Data = [
         langauges: ['REACT JS'],
         imageurl: Todowebsite,
         link: 'https://anish-react-todo.netlify.app/'
+    },
+    {
+        id: Math.random(),
+        title: 'ManageUp App',
+        langauges: ['REACT NATIVE'],
+        imageurl: ManageUpApp,
+        link: 'https://drive.google.com/file/d/1hcIrks_9j59IbaeCNzdVMDkkUg0oW5JZ/view?usp=sharing'
     },
     {
         id: Math.random(),
