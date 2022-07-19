@@ -87,6 +87,23 @@ const AboutPage = () => {
                 iconStyle={{ background: "#ffb400", color: "#fff" }}
               >
                 <div className="aboutpage-expedusubcontainer">
+                  <span>06/2022 - 07/2022</span>
+                  <h5>FULL STACK DEVELOPER <span> - TECH ELECON PVT. LTD.</span></h5>
+                  <ul>
+                    <li>Made an application from react native which have custom backend made up of express is and node js!</li>
+                    <li>Solved the problems which arrised while developing the application!</li>
+                    <li>Ensured everything is done on time and right!</li>
+                  </ul>
+                </div>
+              </VerticalTimelineElement>
+            </VerticalTimeline>
+            <VerticalTimeline>
+              <VerticalTimelineElement
+                icon={<WorkRoundedIcon />}
+                className="vertical-timeline-element--work"
+                iconStyle={{ background: "#ffb400", color: "#fff" }}
+              >
+                <div className="aboutpage-expedusubcontainer">
                   <span>12/2021 - 02/2022</span>
                   <h5>FULL STACK DEVELOPER <span> - IEZAL</span></h5>
                   <ul>
@@ -100,6 +117,7 @@ const AboutPage = () => {
             <VerticalTimeline>
               <VerticalTimelineElement
                 icon={<SchoolRoundedIcon />}
+                position={"right"}
                 className="vertical-timeline-element--work"
                 iconStyle={{ background: "#ffb400", color: "#fff" }}
               >
