@@ -9,6 +9,7 @@ import QRCodeGenerator from './images/qrcodegenerator.jpg';
 import ToDoApp from './images/ToDoApp.jpg';
 import RegistrationApp from './images/RegistrationApp.jpg';
 import ManageUpApp from './images/manageupapp.jpg'
+import ResumeBuilder from './images/ResumeBuilder.jpg'
 
 export const Data = [
     {
@@ -55,6 +56,13 @@ export const Data = [
     },
     {
         id: Math.random(),
+        title: 'Resume Builder',
+        langauges: ['MONGODB', 'EXPRESS JS', 'REACT JS', 'NODE JS'],
+        imageurl: ResumeBuilder,
+        link: 'https://online-resumebuilder.netlify.app/'
+    },
+    {
+        id: Math.random(),
         title: 'QR Code Generator',
         langauges: ['REACT JS'],
         imageurl: QRCodeGenerator,
@@ -90,4 +98,4 @@ export const Data = [
     },
 ]
 
-export const LanguagesKnown = ["HTML", "CSS", "JS", "REACT JS", "REACT NATIVE", "NODE JS", "EXPRESS JS", "TAILWIND CSS", "MONGO DB"]
+export const LanguagesKnown = ["HTML", "CSS", "JS", "REACT JS", "REACT NATIVE", "NODE JS", "EXPRESS JS", "TAILWIND CSS", "MONGO DB", "GITHUB"]

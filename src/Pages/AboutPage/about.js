@@ -46,7 +46,7 @@ const AboutPage = () => {
               </div>
             </div>
             <div style={{ marginTop: "6%" }} className="homepage-buttoncontainer contactpage-button">
-              <a href={Resume} target="_blank" download="Anish Resume.pdf">DONWLOAD CV<div className="homepage-buttonarrow"><FileDownloadRoundedIcon /></div></a>
+              <a href={Resume} target="_blank" download="Anish Patel Resume.pdf">DONWLOAD CV<div className="homepage-buttonarrow"><FileDownloadRoundedIcon /></div></a>
             </div>
           </div>
         </div>
