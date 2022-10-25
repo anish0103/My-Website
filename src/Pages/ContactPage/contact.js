@@ -16,7 +16,7 @@ const ContactPage = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+    }, [])
 
     const namevalid = "^[a-zA-Z.,?\\s]*$";
     const emailvalid = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$";
@@ -34,7 +34,7 @@ const ContactPage = () => {
         SetEmail('')
         SetEnquiry('')
         toast.success("Your Inquiry Is Reached To Me, I Will Contact You Soon!!");
-        const response = await fetch('https://anishpatel-portfolio-backend.herokuapp.com/api/', {
+        const response = await fetch('https://my-website-backend-one.vercel.app/api/', {
             method: 'POST',
             mode: 'cors',
             body: JSON.stringify(data),
