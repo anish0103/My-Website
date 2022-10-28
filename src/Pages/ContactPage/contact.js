@@ -7,6 +7,7 @@ import CallRoundedIcon from '@mui/icons-material/CallRounded';
 import DraftsRoundedIcon from '@mui/icons-material/DraftsRounded';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 
+import SEO from "../../Components/SEO/SEO";
 import './contactpage.css';
 import GitHub from '../images/github.png'
 import Instagram from '../images/instagram.png'
@@ -74,6 +75,9 @@ const ContactPage = () => {
 
     return (
         <>
+         <SEO
+                title="Contact Anish Patel"
+                description="A Full Stack Developer who specializes in JavaScript Technologies across the whole stack (Node, Express, React, React Native). Experience building complete web and mobile applications with backend API Systems." />
             <div className="sliderpage"></div>
             <div className="contactpage-maincontainer">
                 <ToastContainer toastStyle={{ backgroundColor: "#252525", fontSize: "14px", lineHeight: "20px" }} />
@@ -91,7 +95,7 @@ const ContactPage = () => {
                             </div>
                             <div className="contact-subdetails">
                                 <span>MAIL ME</span>
-                                <a href="mailto:anishpatel1031@gmail.com" target='_blank' title='SEND A MAIL' className="simplefont">anishpatel1031@gmail.com</a>
+                                <a rel="noreferrer"  href="mailto:anishpatel1031@gmail.com" target='_blank' title='SEND A MAIL' className="simplefont">anishpatel1031@gmail.com</a>
                             </div>
                         </div>
                         <div className="contact-details">
@@ -100,18 +104,18 @@ const ContactPage = () => {
                             </div>
                             <div className="contact-subdetails">
                                 <span>CALL ME</span>
-                                <a href="Tel: +917433027995" target='_blank' title='MAKE A CALL' className="simplefont">+91 7433027995</a>
+                                <a rel="noreferrer"  href="Tel: +917433027995" target='_blank' title='MAKE A CALL' className="simplefont">+91 7433027995</a>
                             </div>
                         </div>
                         <div className="contactpage-socialmedialink">
                             <div className="contactpage-link">
-                                <a href="https://www.instagram.com/anishp1031/" target="_blank"><img src={Instagram} alt="Instagram" /></a>
+                                <a rel="noreferrer"  href="https://www.instagram.com/anishp1031/" target="_blank"><img src={Instagram} alt="Instagram" /></a>
                             </div>
                             <div className="contactpage-link">
-                                <a href="https://github.com/anish0103" target="_blank"><img src={GitHub} alt="Instagram" /></a>
+                                <a rel="noreferrer"  href="https://github.com/anish0103" target="_blank"><img src={GitHub} alt="Instagram" /></a>
                             </div>
                             <div className="contactpage-link">
-                                <a href="https://www.linkedin.com/in/anish-patel-4090081ab/" target="_blank"><img src={LinkedIn} alt="Instagram" /></a>
+                                <a rel="noreferrer"  href="https://www.linkedin.com/in/anish-patel-4090081ab/" target="_blank"><img src={LinkedIn} alt="Instagram" /></a>
                             </div>
                         </div>
                     </div>

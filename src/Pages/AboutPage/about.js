@@ -7,16 +7,22 @@ import "react-vertical-timeline-component/style.min.css";
 
 import ProfilePhoto from '../images/myimage.png'
 import Resume from './Resume.pdf'
+import SEO from "../../Components/SEO/SEO";
 import { LanguagesKnown } from "../../Data/data";
 import Card from "../../Components/LanguagesCard/card";
 import './aboutpage.css';
 
 const AboutPage = () => {
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
   return (
     <>
+      <SEO
+        title="About Anish Patel"
+        description="A Full Stack Developer who specializes in JavaScript Technologies across the whole stack (Node, Express, React, React Native). Experience building complete web and mobile applications with backend API Systems." />
       <div className="sliderpage"></div>
       <div className="aboutpage-maincontainer">
         <div className="titlecontainer">
@@ -46,7 +52,7 @@ const AboutPage = () => {
               </div>
             </div>
             <div style={{ marginTop: "6%" }} className="homepage-buttoncontainer contactpage-button">
-              <a href={Resume} target="_blank" download="Anish Patel Resume.pdf">DONWLOAD CV<div className="homepage-buttonarrow"><FileDownloadRoundedIcon /></div></a>
+              <a  rel="noreferrer" href={Resume} target="_blank" download="Anish Patel Resume.pdf">DONWLOAD CV<div className="homepage-buttonarrow"><FileDownloadRoundedIcon /></div></a>
             </div>
           </div>
         </div>

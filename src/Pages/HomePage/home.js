@@ -3,12 +3,16 @@ import { Link } from "react-router-dom";
 import Typewriter from 'typewriter-effect';
 import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 
+import SEO from '../../Components/SEO/SEO'
 import ProfilePhoto from '../images/myimage.png'
 import './homepage.css';
 
 const HomePage = () => {
     return (
         <>
+            <SEO
+                title="Anish Patel"
+                description="A Full Stack Developer who specializes in JavaScript Technologies across the whole stack (Node, Express, React, React Native). Experience building complete web and mobile applications with backend API Systems." />
             <div className="sliderpage"></div>
             <div className="homepage-maincontainer">
                 <div className="leftsidecontainer"></div>
