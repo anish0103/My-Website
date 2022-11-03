@@ -3,7 +3,7 @@ import Notes from './images/notes.jpg';
 import Timer from './images/Timer.jpg';
 import Todowebsite from './images/todowebsite.jpg';
 import Calculator from './images/Calculator.jpg';
-import CRUD from './images/crudoperation.jpg'
+import CRUD from './images/crudoperation.png'
 import ChatApplication from './images/chatapplication.jpg'
 import QRCodeGenerator from './images/qrcodegenerator.jpg';
 import ToDoApp from './images/ToDoApp.jpg';
