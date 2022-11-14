@@ -52,7 +52,7 @@ const AboutPage = () => {
               </div>
             </div>
             <div style={{ marginTop: "6%" }} className="homepage-buttoncontainer contactpage-button">
-              <a  rel="noreferrer" href={Resume} target="_blank" download="Anish Patel Resume.pdf">DONWLOAD CV<div className="homepage-buttonarrow"><FileDownloadRoundedIcon /></div></a>
+              <a  rel="noreferrer" href={Resume} target="_blank" download="Anish Patel Resume.pdf">DOWNLOAD CV<div className="homepage-buttonarrow"><FileDownloadRoundedIcon /></div></a>
             </div>
           </div>
         </div>
@@ -72,15 +72,41 @@ const AboutPage = () => {
                 iconStyle={{ background: "#ffb400", color: "#fff" }}
               >
                 <div className="aboutpage-expedusubcontainer">
-                  <span>03/2022 - PRESENT</span>
+                  <span>11/2022 - PRESENT</span>
+                  <h5>FULL STACK DEVELOPER <span> - TECH ELECON PVT. LTD.</span></h5>
+                  
+                </div>
+              </VerticalTimelineElement>
+            </VerticalTimeline>
+            <VerticalTimeline>
+              <VerticalTimelineElement
+                icon={<WorkRoundedIcon />}
+                position={"right"}
+                className="vertical-timeline-element--work"
+                iconStyle={{ background: "#ffb400", color: "#fff" }}
+              >
+                <div className="aboutpage-expedusubcontainer">
+                  <span>07/2022 - 10/2022</span>
+                  <h5>PROFESSIONAL FREELANCER <span> - FREELANCER</span></h5>
+                  <ul>
+                    <li>Made some applications using react and react native which helps to ease 600+ people's task.</li>
+                    <li>Solved the problems which arrised while developing the applications and ensured everything is done on time and right!</li>
+                  </ul>
+                </div>
+              </VerticalTimelineElement>
+            </VerticalTimeline>
+            <VerticalTimeline>
+              <VerticalTimelineElement
+                icon={<WorkRoundedIcon />}
+                className="vertical-timeline-element--work"
+                iconStyle={{ background: "#ffb400", color: "#fff" }}
+              >
+                <div className="aboutpage-expedusubcontainer">
+                  <span>03/2022 - 10/2022</span>
                   <h5>FULL STACK DEVELOPER <span> - MBIT</span></h5>
                   <ul>
-                    <li>I'm one of the developer in the team of three for developing
-                      our college new website!</li>
-                    <li>Developed responsive web pages of official site of our
-                      college new website!</li>
-                    <li>Solved the issues arrised during the development of the
-                      website!</li>
+                    <li>I'm one of the developer in the team of three for developing and maintaining college's new website!</li>
+                    <li>Developed responsive web pages and Solved the issues arrised during the development of the website!</li>
                   </ul>
                 </div>
               </VerticalTimelineElement>
@@ -93,28 +119,10 @@ const AboutPage = () => {
                 iconStyle={{ background: "#ffb400", color: "#fff" }}
               >
                 <div className="aboutpage-expedusubcontainer">
-                  <span>06/2022 - 07/2022</span>
-                  <h5>FULL STACK DEVELOPER <span> - TECH ELECON PVT. LTD.</span></h5>
-                  <ul>
-                    <li>Made an application from react native which have custom backend made up of express is and node js!</li>
-                    <li>Solved the problems which arrised while developing the application!</li>
-                    <li>Ensured everything is done on time and right!</li>
-                  </ul>
-                </div>
-              </VerticalTimelineElement>
-            </VerticalTimeline>
-            <VerticalTimeline>
-              <VerticalTimelineElement
-                icon={<WorkRoundedIcon />}
-                className="vertical-timeline-element--work"
-                iconStyle={{ background: "#ffb400", color: "#fff" }}
-              >
-                <div className="aboutpage-expedusubcontainer">
                   <span>12/2021 - 02/2022</span>
                   <h5>FULL STACK DEVELOPER <span> - IEZAL</span></h5>
                   <ul>
-                    <li>Designed responsive web application!</li>
-                    <li>Achieved specific task given by the company in given deadline!</li>
+                    <li>Designed responsive web application and achieved specific task given by the company in given deadline!</li>
                     <li>Come up with solutions on how to manage things!</li>
                   </ul>
                 </div>
@@ -123,7 +131,6 @@ const AboutPage = () => {
             <VerticalTimeline>
               <VerticalTimelineElement
                 icon={<SchoolRoundedIcon />}
-                position={"right"}
                 className="vertical-timeline-element--work"
                 iconStyle={{ background: "#ffb400", color: "#fff" }}
               >

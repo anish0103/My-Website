@@ -98,4 +98,4 @@ export const Data = [
     },
 ]
 
-export const LanguagesKnown = ["HTML", "CSS", "JS", "REACT JS", "REACT NATIVE", "NODE JS", "EXPRESS JS", "TAILWIND CSS", "MONGO DB", "GITHUB"]
+export const LanguagesKnown = ["REACT JS", "NODE JS", "EXPRESS JS", "MONGO DB", "TAILWIND CSS", ".NET CORE", ".NET FRAMEWORK", "SQL SERVER", "BOOTSTRAP", "REACT NATIVE", "GITHUB", "HTML", "CSS", "JS"]
