@@ -23,7 +23,7 @@ const HomePage = () => {
                 </div>
                 <div className="homepage-rightcontainer">
                     <div className="homepage-namecontainer">
-                        <h2 className="orangecolor">I'M ANISH PATEL</h2>
+                        <h2 className="orangecolor nameText">I'M ANISH PATEL</h2>
                         <h2><Typewriter
                             onInit={(typewriter) => {
                                 typewriter.typeString('')
