@@ -10,43 +10,10 @@ import ToDoApp from './images/ToDoApp.jpg';
 import RegistrationApp from './images/RegistrationApp.jpg';
 import ManageUpApp from './images/manageupapp.jpg'
 import ResumeBuilder from './images/ResumeBuilder.jpg'
+import m5Investment from './images/m5investments.jpg'
+import wordoCart from './images/wordocart.jpg'
 
 export const Data = [
-    {
-        id: Math.random(),
-        title: 'First Demo website',
-        langauges: ['HTML', 'CSS', 'JS'],
-        imageurl: Basic,
-        link: 'https://anish-myfirstwebsite.netlify.app/'
-    },
-    {
-        id: Math.random(),
-        title: 'Note Taking Website',
-        langauges: ['HTML', 'CSS', 'JS', 'BOOTSTRAP'],
-        imageurl: Notes,
-        link: 'https://anish-notes.netlify.app/'
-    },
-    {
-        id: Math.random(),
-        title: 'Timer Clock Website',
-        langauges: ['HTML', 'CSS', 'JS'],
-        imageurl: Timer,
-        link: 'https://anish-timer.netlify.app/'
-    },
-    {
-        id: Math.random(),
-        title: 'Calculator',
-        langauges: ['REACT JS'],
-        imageurl: Calculator,
-        link: 'https://anish-react-calculator.netlify.app/'
-    },
-    {
-        id: Math.random(),
-        title: 'CRUD Operation',
-        langauges: ['MONGODB', 'EXPRESS JS', 'REACT JS', 'NODE JS'],
-        imageurl: CRUD,
-        link: 'https://anish-mern-crud-operation.netlify.app/'
-    },
     {
         id: Math.random(),
         title: 'Chat Application',
@@ -63,11 +30,25 @@ export const Data = [
     },
     {
         id: Math.random(),
-        title: 'QR Code Generator',
+        title: 'M5 Investment Website',
         langauges: ['REACT JS'],
-        imageurl: QRCodeGenerator,
-        link: 'https://anish-react-qrcodegenerator.netlify.app/'
+        imageurl: m5Investment,
+        link: 'https://www.m5investments.in/'
     },
+    {
+        id: Math.random(),
+        title: 'Next JS Dictionary',
+        langauges: ['NEXT JS'],
+        imageurl: wordoCart,
+        link: 'https://nextjs-dictionary.vercel.app/'
+    }, 
+    {
+        id: Math.random(),
+        title: 'CRUD Operation',
+        langauges: ['MONGODB', 'EXPRESS JS', 'REACT JS', 'NODE JS'],
+        imageurl: CRUD,
+        link: 'https://anish-mern-crud-operation.netlify.app/'
+    }, 
     {
         id: Math.random(),
         title: 'ToDo Application',
@@ -77,10 +58,45 @@ export const Data = [
     },
     {
         id: Math.random(),
+        title: 'Calculator',
+        langauges: ['REACT JS'],
+        imageurl: Calculator,
+        link: 'https://anish-react-calculator.netlify.app/'
+    },
+    {
+        id: Math.random(),
+        title: 'QR Code Generator',
+        langauges: ['REACT JS'],
+        imageurl: QRCodeGenerator,
+        link: 'https://anish-react-qrcodegenerator.netlify.app/'
+    },
+    {
+        id: Math.random(),
         title: 'ManageUp App',
         langauges: ['REACT NATIVE'],
         imageurl: ManageUpApp,
         link: 'https://drive.google.com/file/d/1hcIrks_9j59IbaeCNzdVMDkkUg0oW5JZ/view?usp=sharing'
+    },
+    {
+        id: Math.random(),
+        title: 'Timer Clock Website',
+        langauges: ['HTML', 'CSS', 'JS'],
+        imageurl: Timer,
+        link: 'https://anish-timer.netlify.app/'
+    },
+    {
+        id: Math.random(),
+        title: 'Note Taking Website',
+        langauges: ['HTML', 'CSS', 'JS', 'BOOTSTRAP'],
+        imageurl: Notes,
+        link: 'https://anish-notes.netlify.app/'
+    },
+    {
+        id: Math.random(),
+        title: 'First Demo website',
+        langauges: ['HTML', 'CSS', 'JS'],
+        imageurl: Basic,
+        link: 'https://anish-myfirstwebsite.netlify.app/'
     },
     {
         id: Math.random(),
@@ -95,7 +111,7 @@ export const Data = [
         langauges: ['REACT NATIVE'],
         imageurl: RegistrationApp,
         link: 'https://drive.google.com/file/d/1OFRE6hp_nkJjD8TaoSAX3abDkKqo60Me/view?usp=sharing'
-    },
+    }
 ]
 
-export const LanguagesKnown = ["REACT JS", "NODE JS", "EXPRESS JS", "MONGO DB", "TAILWIND CSS", ".NET CORE", ".NET FRAMEWORK", "SQL SERVER", "BOOTSTRAP", "REACT NATIVE", "GITHUB", "HTML", "CSS", "JS"]
+export const LanguagesKnown = ["REACT JS", "NODE JS", "EXPRESS JS", "MONGO DB", "NEXT JS", ".NET CORE", ".NET FRAMEWORK", "SQL SERVER", "BOOTSTRAP", "TAILWIND CSS", "REACT NATIVE", "GITHUB", "HTML", "CSS", "JS"]
