@@ -86,7 +86,7 @@ const AboutPage = () => {
                 iconStyle={{ background: "#ffb400", color: "#fff" }}
               >
                 <div className="aboutpage-expedusubcontainer">
-                  <span>03/2022 - 10/2022</span>
+                  <span>03/2022 - 05/2022</span>
                   <h5>PROFESSIONAL FREELANCER <span> - FREELANCER</span></h5>
                   <ul>
                     <li>Made web and mobile applications using react and react native which helps to ease 1000+ people's task.</li>

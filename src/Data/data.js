@@ -41,14 +41,14 @@ export const Data = [
         langauges: ['NEXT JS'],
         imageurl: wordoCart,
         link: 'https://nextjs-dictionary.vercel.app/'
-    }, 
+    },
     {
         id: Math.random(),
         title: 'CRUD Operation',
         langauges: ['MONGODB', 'EXPRESS JS', 'REACT JS', 'NODE JS'],
         imageurl: CRUD,
         link: 'https://anish-mern-crud-operation.netlify.app/'
-    }, 
+    },
     {
         id: Math.random(),
         title: 'ToDo Application',
@@ -114,4 +114,4 @@ export const Data = [
     }
 ]
 
-export const LanguagesKnown = ["REACT JS", "NODE JS", "EXPRESS JS", "MONGO DB", "NEXT JS", ".NET CORE", ".NET FRAMEWORK", "SQL SERVER", "BOOTSTRAP", "TAILWIND CSS", "REACT NATIVE", "GITHUB", "HTML", "CSS", "JS"]
+export const LanguagesKnown = ["REACT JS", "NODE JS", "EXPRESS JS", "MONGO DB", "NEXT JS", ".NET CORE", ".NET FRAMEWORK", "SQL SERVER", "BOOTSTRAP", "TAILWIND CSS", "POWER BI", "PYTHON", "PANDAS", "REACT NATIVE", "GITHUB", "HTML", "CSS", "JS"]

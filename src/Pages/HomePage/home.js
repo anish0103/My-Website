@@ -30,6 +30,9 @@ const HomePage = () => {
                     <div className="homepage-namecontainer">
                         <h2 className="orangecolor nameText">I'M ANISH PATEL</h2>
                         <h2><Typewriter
+                            options={{
+                                loop: true,
+                            }}
                             onInit={(typewriter) => {
                                 typewriter.typeString('')
                                     .pauseFor(550)
@@ -37,8 +40,8 @@ const HomePage = () => {
                                     .typeString('WEB DEVELOPER')
                                     .pauseFor(2000)
                                     .deleteAll()
-                                    .typeString('MERN STACK DEVELOPER')
-                                    .pauseFor(250)
+                                    .typeString('DATA ANALYST')
+                                    .pauseFor(2000)
                                     .start();
                             }}
                         /></h2>
