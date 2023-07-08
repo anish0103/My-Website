@@ -12,6 +12,7 @@ import ManageUpApp from './images/manageupapp.jpg'
 import ResumeBuilder from './images/ResumeBuilder.jpg'
 import m5Investment from './images/m5investments.jpg'
 import wordoCart from './images/wordocart.jpg'
+import SuperStorePowerBi from './images/superstorepowerbi.jpg'
 
 export const Data = [
     {
@@ -72,6 +73,13 @@ export const Data = [
     },
     {
         id: Math.random(),
+        title: 'Super Store Data Analysis',
+        langauges: ['POWER BI', 'PYTHON', 'PANDAS', 'MATPLOTLIB'],
+        imageurl: SuperStorePowerBi,
+        link: 'https://github.com/anish0103/super-store-data-analysis'
+    },
+    {
+        id: Math.random(),
         title: 'ManageUp App',
         langauges: ['REACT NATIVE'],
         imageurl: ManageUpApp,
@@ -114,4 +122,4 @@ export const Data = [
     }
 ]
 
-export const LanguagesKnown = ["REACT JS", "NODE JS", "EXPRESS JS", "MONGO DB", "NEXT JS", ".NET CORE", ".NET FRAMEWORK", "SQL SERVER", "BOOTSTRAP", "TAILWIND CSS", "POWER BI", "PYTHON", "PANDAS", "REACT NATIVE", "GITHUB", "HTML", "CSS", "JS"]
+export const LanguagesKnown = ["REACT JS", "NODE JS", "EXPRESS JS", "MONGO DB", "NEXT JS", ".NET CORE", ".NET FRAMEWORK", "SQL SERVER", "BOOTSTRAP", "TAILWIND CSS", "POWER BI", "PYTHON", "EXCEL", "REACT NATIVE", "GITHUB", "HTML", "CSS", "JS"]

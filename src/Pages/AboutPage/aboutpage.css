@@ -108,6 +108,15 @@
   opacity: 0.8;
 }
 
+.aboutpage-expedusubcontainer .grades p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  width: fit-content;
+  margin: 0px;
+  font-weight: 500;
+  color: #ffb400;
+}
+
 .aboutpage-expedusubcontainer h5 {
   font-size: 18px;
   margin-bottom: 10px;

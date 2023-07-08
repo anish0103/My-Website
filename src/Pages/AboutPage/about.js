@@ -120,8 +120,11 @@ const AboutPage = () => {
                 iconStyle={{ background: "#ffb400", color: "#fff" }}
               >
                 <div className="aboutpage-expedusubcontainer">
-                  <span>2019 - PRESENT</span>
+                  <span>2019 - 2023</span>
                   <h5>BACHELOR DEGREE <span> - MBIT</span></h5>
+                  <ul>
+                    <li className="grades"><p>9.20 CGPA</p></li>
+                  </ul>
                 </div>
               </VerticalTimelineElement>
             </VerticalTimeline>
