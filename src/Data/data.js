@@ -13,6 +13,7 @@ import ResumeBuilder from './images/ResumeBuilder.jpg'
 import m5Investment from './images/m5investments.jpg'
 import wordoCart from './images/wordocart.jpg'
 import SuperStorePowerBi from './images/superstorepowerbi.jpg'
+import HRMSDataAnalysis from './images/hrms_dataanalysis.png'
 
 export const Data = [
     {
@@ -57,12 +58,20 @@ export const Data = [
         imageurl: Todowebsite,
         link: 'https://anish-react-todo.netlify.app/'
     },
+    
     {
         id: Math.random(),
-        title: 'Calculator',
-        langauges: ['REACT JS'],
-        imageurl: Calculator,
-        link: 'https://anish-react-calculator.netlify.app/'
+        title: 'Human Resource Data Analysis',
+        langauges: ['POWER BI'],
+        imageurl: HRMSDataAnalysis,
+        link: 'https://github.com/anish0103/human-resource-data-analysis'
+    },
+    {
+        id: Math.random(),
+        title: 'Super Store Data Analysis',
+        langauges: ['POWER BI', 'PYTHON', 'PANDAS', 'MATPLOTLIB'],
+        imageurl: SuperStorePowerBi,
+        link: 'https://github.com/anish0103/super-store-data-analysis'
     },
     {
         id: Math.random(),
@@ -73,10 +82,10 @@ export const Data = [
     },
     {
         id: Math.random(),
-        title: 'Super Store Data Analysis',
-        langauges: ['POWER BI', 'PYTHON', 'PANDAS', 'MATPLOTLIB'],
-        imageurl: SuperStorePowerBi,
-        link: 'https://github.com/anish0103/super-store-data-analysis'
+        title: 'Calculator',
+        langauges: ['REACT JS'],
+        imageurl: Calculator,
+        link: 'https://anish-react-calculator.netlify.app/'
     },
     {
         id: Math.random(),
