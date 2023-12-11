@@ -72,12 +72,12 @@ const AboutPage = () => {
                 iconStyle={{ background: "#ffb400", color: "#fff" }}
               >
                 <div className="aboutpage-expedusubcontainer">
-                  <span>11/2022 - PRESENT</span>
+                  <span>11/2022 - 11/2023</span>
                   <h5>FULL STACK DEVELOPER INTERN<span> - TECH ELECON PVT. LTD.</span></h5>
                   <ul>
-                    <li>Working on flagship projects as a full stack developer, meeting deadlines and driving innovation.</li>
-                    <li>Facilitating seamless onboarding by providing effective training to new team members. </li>
-                    <li>Ensuring timely project completion through efficient time management and collaboration.</li>
+                    <li>Worked on flagship projects as a full stack developer, meet deadlines and drived innovation.</li>
+                    <li>Facilitated seamless onboarding by providing effective training to new team members. </li>
+                    <li>Ensured timely project completion through efficient time management and collaboration.</li>
                   </ul>
                 </div>
               </VerticalTimelineElement>
