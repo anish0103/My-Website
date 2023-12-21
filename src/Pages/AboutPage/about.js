@@ -42,7 +42,7 @@ const AboutPage = () => {
                 <h4><span>First Name:</span> Anish</h4>
                 <h4><span>Age:</span> 22</h4>
                 <h4><span>Freelance:</span> Available</h4>
-                <h4><span>Phone:</span> +91 7433027995</h4>
+                <h4><span>Phone:</span> +1 (473) 955-1031</h4>
               </div>
               <div>
                 <h4><span>Last Name:</span> Patel</h4>

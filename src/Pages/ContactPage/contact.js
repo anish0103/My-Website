@@ -104,7 +104,7 @@ const ContactPage = () => {
                             </div>
                             <div className="contact-subdetails">
                                 <span>CALL ME</span>
-                                <a rel="noreferrer"  href="Tel: +917433027995" target='_blank' title='MAKE A CALL' className="simplefont">+91 7433027995</a>
+                                <a rel="noreferrer"  href="Tel: +14739551031" target='_blank' title='MAKE A CALL' className="simplefont">+1 (473) 955-1031</a>
                             </div>
                         </div>
                         <div className="contactpage-socialmedialink">
