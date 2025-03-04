@@ -14,6 +14,14 @@ import './aboutpage.css';
 
 const AboutPage = () => {
 
+  var dPast = 'March 1, 2001';
+  var indicatedD = new Date(dPast);
+  var d = new Date();
+
+  var elapsed = new Date(d.getTime() - indicatedD.getTime());
+
+  var years = Math.abs(elapsed.getUTCFullYear() - 1970);
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -40,7 +48,7 @@ const AboutPage = () => {
             <div className="aboutpage-personalinner">
               <div>
                 <h4><span>First Name:</span> Anish</h4>
-                <h4><span>Age:</span> 22</h4>
+                <h4><span>Age:</span> {years}</h4>
                 <h4><span>Freelance:</span> Available</h4>
                 <h4><span>Phone:</span> +1 (437) 955-1031</h4>
               </div>
